@@ -188,7 +188,7 @@ describe("TUI file diff view", () => {
     expect(view.render(120).join("\n")).toContain("src/app.ts");
 
     view.invalidate();
-    expect(view.render(80)).not.toBe(first);
+    expect(view.render(120)).not.toBe(wider);
   });
 
   test("bounds very large diffs", () => {
